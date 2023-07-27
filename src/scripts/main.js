@@ -1,11 +1,19 @@
 // Imports go first
 import { makePottery } from "./PotteryWheel.js";
+import { firePottery } from "./Kiln.js";
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery("cylinder", 1, 4);
 let pot = makePottery("sphere", 5, 7);
 let chalice = makePottery("hourglass", 1, 5);
 let vase = makePottery("cylinder", 3, 8);
 let bowl = makePottery("round", 1, 3);
+
+firePottery(mug, 1000);
+firePottery(pot, 3000);
+firePottery(chalice, 2000);
+firePottery(vase, 4500);
+firePottery(bowl, 2200);
+
 console.log(mug);
 console.log(pot);
 console.log(chalice);

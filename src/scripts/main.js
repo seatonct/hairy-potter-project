@@ -3,11 +3,11 @@ import { makePottery } from "./PotteryWheel.js";
 import { firePottery } from "./Kiln.js";
 import { toSellOrNotToSell, usePottery } from "./PotteryCatalog.js";
 // Make 5 pieces of pottery at the wheel
-let mug = makePottery("cylinder", 2, 4);
-let pot = makePottery("sphere", 10, 7);
-let chalice = makePottery("hourglass", 2, 5);
-let vase = makePottery("cylinder", 6, 8);
-let bowl = makePottery("round", 6, 3);
+let mug = makePottery("Mug", 2, 4);
+let pot = makePottery("Pot", 10, 7);
+let chalice = makePottery("Chalice", 2, 5);
+let vase = makePottery("Vase", 6, 8);
+let bowl = makePottery("Bowl", 6, 3);
 
 firePottery(mug, 1000);
 firePottery(pot, 3000);
@@ -27,8 +27,8 @@ toSellOrNotToSell(chalice);
 toSellOrNotToSell(vase);
 toSellOrNotToSell(bowl);
 
-let catalog = usePottery();
-console.log(catalog);
+let inventory = usePottery();
+console.log(inventory);
 
 // Fire each piece of pottery in the kiln
 

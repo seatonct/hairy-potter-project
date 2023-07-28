@@ -9,8 +9,8 @@ export const toSellOrNotToSell = (potteryObj) => {
       potteryObj.price = 20;
       inventory.push(potteryObj);
     }
-    return potteryObj;
   }
+  return potteryObj;
 };
 
 export const usePottery = () => {

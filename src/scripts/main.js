@@ -2,6 +2,7 @@
 import { makePottery } from "./PotteryWheel.js";
 import { firePottery } from "./Kiln.js";
 import { toSellOrNotToSell, usePottery } from "./PotteryCatalog.js";
+import { PotteryList } from "./PotteryList.js";
 // Make 5 pieces of pottery at the wheel
 let mug = makePottery("Mug", 2, 4);
 let pot = makePottery("Pot", 10, 7);
@@ -29,6 +30,9 @@ toSellOrNotToSell(bowl);
 
 let inventory = usePottery();
 console.log(inventory);
+
+let catalogContent = document.querySelector(".PotteryList");
+catalogContent.innerHTML = PotteryList();
 
 // Fire each piece of pottery in the kiln
 
